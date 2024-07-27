@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --c-bg: #973131;
+  --c-lighter: #e0a75e;
+  --c-light: #e0a75e;
+  --c-text: #f6f6f6;
+  /* --c-contrast: ; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--c-text);
+  text-decoration: none;
+}
+
+.link:hover {
+  filter: contrast(70%);
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--c-text);
+  font-style: normal;
+  /* background-image: url("../assets/nylium.png"); */
+  background-color: var(--c-bg);
+  /* Add the height of the navbar and the padding */
+  padding-top: 64px;
+}
+
+.logo {
+  height: 64px;
+  clip-path: circle();
+}
+
+.logo:hover {
+  filter: contrast(110%);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4px 8px;
+  /* height: 72px; */
+  background-color: var(--c-light);
+  overflow: hidden; /*FIXME:For some reason a scrollbar appears without this*/
+}
+.server-ip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-right: auto;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  /*Align and space text & icons*/
+  display: flex;
+  gap: 4px;
+  font-size: 18px;
+}
+
+section {
+  height: 100vh;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-title h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 86px;
+}
+
+.main-title p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.first-page {
+  background-image: url("../assets/bg-image.png");
+  background-size: 100vw 100vh;
+}
