@@ -28,15 +28,14 @@
         <img class="logo" src="./assets/logo.png" alt="CVN logo" />
       </a>
       <!-- TODO: Implement click to copy system -->
-      <a href="" class="server-ip link">
+      <p href="" class="server-ip navbar-title link">
         <!-- <box-icon name="globe" color="#ffffff"></box-icon> -->
         mc.crimsonvalleynetwork.com
-      </a>
+      </p>
       <ul>
-        <li></li>
         <li>
           <box-icon name="info-circle" color="#ffffff"></box-icon
-          ><a class="link" href="#"> Server Info</a>
+          ><a class="link" href="#server-info"> Server Info</a>
         </li>
         <li>
           <box-icon name="store" color="#ffffff"></box-icon
@@ -44,7 +43,9 @@
         </li>
         <li>
           <box-icon name="discord-alt" type="logo" color="#ffffff"></box-icon>
-          <a class="link" href="#">Join our Discord!</a>
+          <a class="link" href="https://discord.gg/zDC6BWaHNj"
+            >Join our Discord!</a
+          >
         </li>
       </ul>
     </nav>
@@ -82,7 +83,7 @@
         </p>
       </div>
       <div class="secondary-title">
-        <h1>Server Info</h1>
+        <h1 id="server-info">Server Info</h1>
         <table>
           <tr>
             <td>Server Version:</td>
@@ -95,7 +96,7 @@
             <td>Server IP:</td>
             <td>
               <strong>
-                <a class="link" href="#">mc.crimsonvalleynetwork.com</a>
+                <p class="link server-ip">mc.crimsonvalleynetwork.com</p>
               </strong>
               (click to copy)
             </td>
@@ -114,12 +115,17 @@
           Minutes At Most. It Should Appear At The Bottom Of Your Friends Tab.
           <br /><span class="italic"
             >Restart May Be Needed, If None Of This Works, Create a ticket on
-            our <a href="https://discord.gg/X" class="link">Discord</a>.
+            our
+            <strong
+              ><a href="https://discord.gg/zDC6BWaHNj" class="link"
+                >Discord</a
+              ></strong
+            >.
           </span>
         </p>
       </div>
     </section>
 
-    <!-- <script src="" async defer></script> -->
+    <script src="./app.js" async defer></script>
   </body>
 </html>

@@ -32,6 +32,9 @@ a {
   color: var(--c-text);
   text-decoration: none;
 }
+.link {
+  cursor: pointer;
+}
 
 .link:hover {
   filter: contrast(70%);
@@ -70,7 +73,7 @@ nav {
   background-color: var(--c-light);
   overflow: hidden; /*FIXME:For some reason a scrollbar appears without this*/
 }
-.server-ip {
+.navbar-title {
   display: flex;
   justify-content: center;
   align-items: center;
