@@ -119,6 +119,7 @@ section {
 .main-title h1 {
   font-family: "Archivo Black", sans-serif;
   font-size: 86px;
+  font-weight: 600;
 }
 
 .main-title p {
