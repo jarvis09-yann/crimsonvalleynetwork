@@ -79,6 +79,7 @@ nav {
   font-size: 24px;
   margin-right: auto;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 nav ul {
   display: flex;
@@ -183,4 +184,61 @@ table {
 td {
   border: 1px solid #ddd;
   padding: 8px;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding-top: 48px;
+  }
+
+  nav {
+    font-size: 18px;
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav p {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav ul li {
+    font-size: 16px;
+  }
+
+  .main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main-title h1 {
+    font-size: 48px;
+  }
+
+  .main-title p {
+    font-size: 16px;
+  }
+
+  .secondary-title h1 {
+    font-size: 32px;
+  }
+
+  .secondary-title p {
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+  }
 }
